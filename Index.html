@@ -1,0 +1,255 @@
+<!Doctype html>
+<html lang="es" class="h-full">
+<head><script src="/_sdk/telemetry_sdk.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repositorio de Conocimientos - EPO 5</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<script src="/_sdk/element_sdk.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: {
+display: ['Playfair Display', 'serif'],
+body: ['DM Sans', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+html, body { height: 100%; overflow: auto; }
+body { font-family: 'DM Sans', sans-serif; }
+.animate-fade-up { animation: fadeUp 0.8s ease forwards; opacity: 0; transform: translateY(30px); }
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-5 { animation-delay: 0.5s; }
+.card-hover { transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.card-hover:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 25px 50px -12px rgba(13, 91, 43, 0.15); }
+.gradient-text { background: linear-gradient(135deg, #0d5b2b, #18a945); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-pattern { background-image: radial-gradient(circle at 20% 50%, rgba(39, 212, 94, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(13, 91, 43, 0.05) 0%, transparent 50%); }
+</style>
+<style>body { box-sizing: border-box; }</style>
+<script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+</head>
+<body class="h-full bg-[#f8faf9] text-[#1a2e23]"><!-- Header -->
+<header class="sticky top-0 z-50 bg-[#0d5b2b] shadow-xl shadow-green-900/20">
+<div class="max-w-7xl mx-auto px-6">
+<nav class="flex items-center justify-between py-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#27d45e] to-[#18a945] flex items-center justify-center text-2xl shadow-lg shadow-green-500/30">
+📖
+</div>
+<h2 id="site-title" class="text-white font-display text-2xl font-bold tracking-tight">EPO 5</h2>
+</div>
+<div class="hidden md:flex items-center gap-6"><a href="#bienvenida" class="text-green-100 hover:text-white transition text-sm font-medium">Inicio</a> <a href="#institucion" class="text-green-100 hover:text-white transition text-sm font-medium">Institución</a> <a href="#valores" class="text-green-100 hover:text-white transition text-sm font-medium">Valores</a> <a href="#repositorio" class="text-green-100 hover:text-white transition text-sm font-medium">Repositorio</a> <a href="#contacto" class="text-green-100 hover:text-white transition text-sm font-medium">Contacto</a>
+</div>
+</nav>
+</div>
+</header><!-- Hero -->
+<section class="hero-pattern py-24 md:py-32 bg-gradient-to-br from-[#e8f5ec] via-[#f0faf3] to-[#dff1e3]">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="animate-fade-up">
+<h1 id="hero-heading" class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-6 text-[#0d5b2b]">Repositorio de Conocimientos</h1>
+<div class="flex flex-wrap gap-4">
+</div>
+</div>
+<div class="animate-fade-up animate-delay-2">
+<div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-green-900/10 border border-green-100"><img src="https://static.wixstatic.com/media/d96502_b847aa0859c344efae82b1e7d8461f59~mv2.jpg/v1/fill/w_600,h_450,al_c,q_80,enc_auto/d96502_b847aa0859c344efae82b1e7d8461f59~mv2.jpg" alt="Escuela Preparatoria Oficial No. 5" class="w-full h-[350px] md:h-[420px] object-cover" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='linear-gradient(135deg,#dff1e3,#c6ebd0)'; this.alt='Imagen no disponible';">
+</div>
+</div>
+</div>
+</div>
+</section><!-- Bienvenida -->
+<section id="bienvenida" class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-4xl">
+<div class="animate-fade-up"><span class="inline-block w-16 h-1 bg-[#18a945] rounded mb-6"></span>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-[#0d5b2b] mb-8">¡Bienvenido!</h2>
+<p class="text-lg text-[#3a6b4a] leading-[2]">Te invitamos a explorar nuestro repositorio de conocimientos, un espacio colaborativo diseñado para potenciar el aprendizaje, promover la innovación educativa y contribuir al desarrollo integral de nuestra comunidad. Aquí encontrarás recursos de calidad organizados por áreas de conocimiento para fortalecer tu formación académica y fomentar el desarrollo de competencias para la vida.</p>
+</div>
+</div>
+</div>
+</section><!-- Institución -->
+<section id="institucion" class="py-24 bg-[#f4faf6]">
+<div class="max-w-7xl mx-auto px-6"><span class="inline-block w-16 h-1 bg-[#18a945] rounded mb-6"></span>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-[#0d5b2b] mb-12">Nuestra Institución</h2>
+<div class="grid md:grid-cols-2 gap-8"><!-- Misión -->
+<div class="bg-white rounded-3xl p-8 shadow-lg shadow-green-900/5 card-hover animate-fade-up animate-delay-1">
+<div class="rounded-2xl overflow-hidden mb-6 border border-green-100"><img src="https://static.wixstatic.com/media/d96502_a629cdd608e5413992bb1ff1e2a6ca34~mv2.jpg/v1/fill/w_400,h_300,al_c,q_80,enc_auto/d96502_a629cdd608e5413992bb1ff1e2a6ca34~mv2.jpg" alt="Misión EPO 5" class="w-full h-56 object-cover" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#e8f5ec'; this.alt='Imagen no disponible';">
+</div>
+<div class="flex items-center gap-3 mb-4">
+<h3 class="font-display text-2xl font-bold text-[#0d5b2b]">Misión</h3>
+</div>
+<p class="text-[#3a6b4a] leading-relaxed">Formar estudiantes integrales con pensamiento crítico, valores sólidos y habilidades para la vida, proporcionando una educación de calidad que fomente el desarrollo personal, académico y social de nuestra comunidad escolar, contribuyendo activamente al progreso de la sociedad.</p>
+</div><!-- Visión -->
+<div class="bg-white rounded-3xl p-8 shadow-lg shadow-green-900/5 card-hover animate-fade-up animate-delay-2">
+<div class="rounded-2xl overflow-hidden mb-6 border border-green-100"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphb57RWraPx3YG1GlTSVsRM6pkqOluSNkgA&s" alt="Visión EPO 5" class="w-full h-56 object-cover" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#e8f5ec'; this.alt='Imagen no disponible';">
+</div>
+<div class="flex items-center gap-3 mb-4">
+<h3 class="font-display text-2xl font-bold text-[#0d5b2b]">Visión</h3>
+</div>
+<p class="text-[#3a6b4a] leading-relaxed">Ser una institución educativa líder reconocida por la excelencia académica, la innovación pedagógica y la formación de ciudadanos comprometidos con su comunidad, capaces de enfrentar los retos del mundo moderno con responsabilidad, creatividad y sentido humano.</p>
+</div>
+</div>
+</div>
+</section><!-- Valores -->
+<section id="valores" class="py-24 bg-gradient-to-br from-[#e8f5ec] to-[#dff1e3]">
+<div class="max-w-7xl mx-auto px-6 text-center"><span class="inline-block w-16 h-1 bg-[#18a945] rounded mb-6"></span>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-[#0d5b2b] mb-4">Nuestros Valores Institucionales</h2>
+<p class="text-lg text-[#3a6b4a] mb-14 max-w-2xl mx-auto">Los principios que orientan nuestra formación y fortalecen nuestra comunidad educativa.</p>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white rounded-3xl p-8 text-left card-hover animate-fade-up animate-delay-1">
+<div class="rounded-2xl bg-[#e8f5ec] flex items-center justify-center mb-5">
+</div>
+<h3 class="font-display text-xl font-bold text-[#0d5b2b] mb-3">Excelencia Académica</h3>
+<p class="text-[#3a6b4a] leading-relaxed">Promovemos el aprendizaje de calidad, el esfuerzo constante y la mejora continua en todas las áreas del conocimiento.</p>
+</div>
+<div class="bg-white rounded-3xl p-8 text-left card-hover animate-fade-up animate-delay-2">
+<div class="rounded-2xl bg-[#e8f5ec] flex items-center justify-center mb-5">
+</div>
+<h3 class="font-display text-xl font-bold text-[#0d5b2b] mb-3">Responsabilidad Social</h3>
+<p class="text-[#3a6b4a] leading-relaxed">Fomentamos el compromiso con la comunidad, la participación ciudadana y el respeto hacia los demás.</p>
+</div>
+<div class="bg-white rounded-3xl p-8 text-left card-hover animate-fade-up animate-delay-3">
+<div class="rounded-2xl bg-[#e8f5ec] flex items-center justify-center mb-5">
+</div>
+<h3 class="font-display text-xl font-bold text-[#0d5b2b] mb-3">Innovación Educativa</h3>
+<p class="text-[#3a6b4a] leading-relaxed">Impulsamos nuevas estrategias, herramientas y metodologías que enriquecen el proceso de enseñanza y aprendizaje.</p>
+</div>
+<div class="bg-white rounded-3xl p-8 text-left card-hover animate-fade-up animate-delay-4">
+<div class="rounded-2xl bg-[#e8f5ec] flex items-center justify-center mb-5">
+</div>
+<h3 class="font-display text-xl font-bold text-[#0d5b2b] mb-3">Inclusión y Diversidad</h3>
+<p class="text-[#3a6b4a] leading-relaxed">Valoramos las diferencias y promovemos la igualdad de oportunidades para todos los integrantes de la comunidad escolar.</p>
+</div>
+<div class="bg-white rounded-3xl p-8 text-left card-hover animate-fade-up animate-delay-5">
+<div class="rounded-2xl bg-[#e8f5ec] flex items-center justify-center mb-5">
+</div>
+<h3 class="font-display text-xl font-bold text-[#0d5b2b] mb-3">Sustentabilidad Ambiental</h3>
+<p class="text-[#3a6b4a] leading-relaxed">Promovemos acciones responsables para el cuidado del medio ambiente y la construcción de un futuro sostenible.</p>
+</div>
+</div>
+</div>
+</section><!-- Repositorio -->
+<section id="repositorio" class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 text-center"><span class="inline-block w-16 h-1 bg-[#18a945] rounded mb-6"></span>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-[#0d5b2b] mb-4">Repositorio Académico</h2>
+<p class="text-lg text-[#3a6b4a] mb-14 max-w-2xl mx-auto">Consulta los recursos organizados por áreas de conocimiento.</p>
+<div class="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+<div class="bg-gradient-to-br from-[#f4faf6] to-[#e8f5ec] rounded-3xl p-8 text-left card-hover border border-green-100">
+
+<h3 class="font-display text-2xl font-bold text-[#0d5b2b] mb-3">Lenguaje</h3>
+<p class="text-[#3a6b4a] leading-relaxed mb-6">Accede a materiales de apoyo para Lenguaje y Comunicación.</p><a href="Lengua.html" class="inline-flex items-center gap-2 px-6 py-3 bg-[#A91D18] text-white rounded-xl font-semibold hover:-translate-y-1 transition-all duration-300 shadow-md shadow-red-900/20">Ver </a>
+</div>
+<div class="bg-gradient-to-br from-[#f4faf6] to-[#e8f5ec] rounded-3xl p-8 text-left card-hover border border-green-100">
+<h3 class="font-display text-2xl font-bold text-[#0d5b2b] mb-3">Pensamiento Matemático</h3>
+<p class="text-[#3a6b4a] leading-relaxed mb-6">Encuentra recursos para fortalecer tus habilidades matemáticas.</p><a href="Mate.html" class="inline-flex items-center gap-2 px-6 py-3 bg-[#A91D18] text-white rounded-xl font-semibold hover:-translate-y-1 transition-all duration-300 shadow-md shadow-red-900/20"> Ver </a>
+</div>
+</div>
+</div>
+</section><!-- Contacto -->
+<section id="contacto" class="py-24 bg-[#f4faf6]">
+<div class="max-w-7xl mx-auto px-6 text-center"><span class="inline-block w-16 h-1 bg-[#18a945] rounded mb-6"></span>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-[#0d5b2b] mb-4">Contacto</h2>
+<p class="text-lg text-[#3a6b4a] mb-12 max-w-2xl mx-auto">Si tienes dudas, sugerencias o deseas compartir material educativo, envíanos un mensaje.</p>
+<form id="contact-form" class="max-w-2xl mx-auto flex flex-col gap-5"><label for="name" class="sr-only">Nombre completo</label> <input id="name" type="text" placeholder="Nombre completo" required class="w-full px-6 py-4 bg-white rounded-2xl border border-green-100 text-[#1a2e23] font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#18a945] focus:border-transparent transition"> <label for="email" class="sr-only">Correo electrónico</label> <input id="email" type="email" placeholder="Correo electrónico" required class="w-full px-6 py-4 bg-white rounded-2xl border border-green-100 text-[#1a2e23] font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#18a945] focus:border-transparent transition"> <label for="subject" class="sr-only">Asunto</label> <input id="subject" type="text" placeholder="Asunto" required class="w-full px-6 py-4 bg-white rounded-2xl border border-green-100 text-[#1a2e23] font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#18a945] focus:border-transparent transition"> <label for="message" class="sr-only">Mensaje</label> <textarea id="message" placeholder="Escribe tu mensaje..." required rows="6" class="w-full px-6 py-4 bg-white rounded-2xl border border-green-100 text-[#1a2e23] font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#18a945] focus:border-transparent transition resize-none"></textarea> <button type="submit" class="w-full px-6 py-4 bg-[#0d5b2b] text-white rounded-2xl font-semibold text-lg hover:bg-[#18a945] transition-all duration-300 shadow-lg shadow-green-900/20 flex items-center justify-center gap-2"> <i data-lucide="send" class="w-5 h-5"></i> Enviar Mensaje </button>
+<div id="form-success" class="hidden px-6 py-4 bg-[#e8f5ec] text-[#0d5b2b] rounded-2xl font-medium border border-green-200">
+✅ ¡Mensaje enviado correctamente! Gracias por contactarnos.
+</div>
+</form>
+</div>
+</section><!-- Footer -->
+<footer class="bg-[#0d5b2b] text-white py-16">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<div class="flex justify-center mb-6">
+</div>
+<h3 class="font-display text-2xl font-bold mb-6">Repositorio de Conocimientos EPO 5</h3>
+<div class="text-green-200 space-y-1 text-sm leading-relaxed">
+<p>Equipo desarrollador: Equipo Verde · Sexto Semestre · Generación 2023–2026</p>
+<p>Fecha de elaboración: Mayo 2026</p>
+<p class="pt-2">Escuela Preparatoria Oficial Núm. 05 · Almoloya de Juárez, Estado de México</p>
+</div>
+</div>
+</footer>
+<script>
+// Initialize Lucide icons
+lucide.createIcons();
+
+// Contact form
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+e.preventDefault();
+this.querySelector('button').disabled = true;
+this.querySelector('button').innerHTML = '<span class="animate-pulse">Enviando...</span>';
+setTimeout(() => {
+document.getElementById('form-success').classList.remove('hidden');
+this.reset();
+this.querySelector('button').disabled = false;
+this.querySelector('button').innerHTML = '<i data-lucide="send" class="w-5 h-5"></i> Enviar Mensaje';
+lucide.createIcons();
+setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 4000);
+}, 1200);
+});
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
+}
+});
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.animate-fade-up').forEach(el => observer.observe(el));
+
+// Element SDK
+const defaultConfig = {
+site_title: 'EPO 5',
+hero_heading: 'Repositorio de Conocimientos',
+background_color: '#f8faf9',
+surface_color: '#ffffff',
+text_color: '#0d5b2b',
+primary_action_color: '#0d5b2b',
+secondary_action_color: '#A91D18',
+font_family: 'DM Sans',
+font_size: 16
+};
+
+function applyConfig(config) {
+const c = { ...defaultConfig, ...config };
+document.getElementById('site-title').textContent = c.site_title;
+document.getElementById('hero-heading').textContent = c.hero_heading;
+document.body.style.fontFamily = ${c.font_family}, sans-serif;
+}
+
+window.elementSdk.init({
+defaultConfig,
+onConfigChange: async (config) => applyConfig(config),
+mapToCapabilities: (config) => ({
+recolorables: [
+{ get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+{ get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+{ get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+{ get: () => config.primary_action_color || defaultConfig.primary_action_color, set: (v) => { config.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); } },
+{ get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
+ ],
+borderables: [],
+fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
+fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } }
+}),
+mapToEditPanelValues: (config) => new Map([
+['site_title', config.site_title || defaultConfig.site_title],
+['hero_heading', config.hero_heading || defaultConfig.hero_heading]
+])
+});
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF``$cv$params={r:'a0a22329bd03cb91',t:'MTc4MTE5Njg2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
